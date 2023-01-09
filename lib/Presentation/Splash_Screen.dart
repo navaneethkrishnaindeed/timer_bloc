@@ -26,12 +26,8 @@ class SplashScreenone extends StatelessWidget {
               width: double.infinity,
               height: 500,
               child: Image.asset("assets/ykip.png"),
-              // nextScreen: Scaffold(),
             ),
             Spacer(),
-            // Container(
-            //   child: assetsPath.Splashscreenimage,
-            // ),
           ],
         ),
       )),
