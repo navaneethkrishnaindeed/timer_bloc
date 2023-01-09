@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +13,7 @@ class SplashScreenone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      BlocProvider.of<TimerBloc>(context).add(TimerEvent.started(ctx: context));
-    });
+    BlocProvider.of<TimerBloc>(context).add(TimerEvent.started(ctx: context));
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
